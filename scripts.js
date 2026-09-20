@@ -1,9 +1,9 @@
-```javascript
-// 타이머 설정
+
+
 const WORK_TIME = 25 * 60;
 const BREAK_TIME = 5 * 60;
 
-// 현재 상태
+
 let timeLeft = WORK_TIME;
 let isRunning = false;
 let isWorkMode = true;
@@ -12,7 +12,7 @@ let completedCount = 0;
 let timerId = null;
 
 
-// HTML 요소 가져오기
+
 const timer = document.getElementById("timer");
 const mode = document.getElementById("mode");
 const count = document.getElementById("count");
@@ -22,7 +22,7 @@ const pauseBtn = document.getElementById("pauseBtn");
 const resetBtn = document.getElementById("resetBtn");
 
 
-// 타이머 화면 업데이트
+
 function updateTimer() {
     const minutes = Math.floor(timeLeft / 60);
     const seconds = timeLeft % 60;
@@ -112,4 +112,3 @@ resetBtn.addEventListener("click", resetTimer);
 
 // 처음 화면 설정
 updateTimer();
-```
